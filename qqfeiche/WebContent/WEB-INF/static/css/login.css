@@ -1,0 +1,125 @@
+
+input[type="text"]:focus, input[type="password"]:focus { outline: none; }
+.uncheck { background: url(../images/icon_2.png) no-repeat -74px -163px; }
+.checked { background: url(../images/icon_2.png) no-repeat -92px -163px; }
+.qlogin { display: none; }
+.login, .login_no_qlogin { margin: 0 auto; width: 488px; border: 1px solid #b1b3b4; position: relative; }
+.header { height: 60px; border-bottom: 1px solid #e2e2e2; position: relative; font-family: "Hiragino Sans GB","Î¢ÈíÑÅºÚ"; }
+    .header .logo { position: absolute; width: 200px; height: 60px; background-size: 200px 60px; }
+    .header .switch { height: 45px; position: absolute; left: 150px; bottom: 0; font-size: 16px; }
+        .header .switch #switch_qlogin { margin-right: 80px; }
+        .header .switch .switch_btn { color: #999; display: inline-block; height: 45px; line-height: 45px; outline: none; *hide-focus: expression(this.hideFocus=true); }
+        .header .switch .switch_btn_focus { color: #333; display: inline-block; height: 45px; line-height: 45px; outline: none; *hide-focus: expression(this.hideFocus=true); }
+        .header .switch .switch_btn:hover { text-decoration: none; color: #333; }
+        .header .switch .switch_btn_focus:hover { text-decoration: none; }
+        .header .switch .switch_bottom { position: absolute; bottom: -1px; border-bottom: 2px solid #848484; }
+    .header .close { width: 47px; height: 20px; float: right; background: url(../images/icon_2.png) no-repeat -221px -126px; outline: none; *hide-focus: expression(this.hideFocus=true); }
+        .header .close:hover { background-position: -221px -151px; }
+.login_no_qlogin .header .switch { height: 40px; position: absolute; left: 105px; bottom: 0; font-size: 22px; }
+    .login_no_qlogin .header .switch .switch_bottom { display: none; }
+    .login_no_qlogin .header .switch .switch_btn { display: none; }
+    .login_no_qlogin .header .switch .switch_btn_focus { color: #333; cursor: default; text-decoration: none; display: inline-block; height: 30px; line-height: 30px; }
+.web_login { width: 488px; position: relative; padding-bottom: 65px; }
+    .web_login .tips { height: 50px; width: 270px; position: relative; margin: 0 auto; z-index: 11; }
+    .web_login .error_tips { text-align: center; padding: 5px; border: 1px solid #dad699; background: #f9f5c7; display: none; position: absolute; bottom: -2px; border-radius: 2px; }
+        .web_login .error_tips .error_logo { position: absolute; left: 3px; height: 18px; line-height: 18px; width: 18px; background: url(../images/icon_2.png) no-repeat 0 -162px; }
+        .web_login .error_tips .err_m { display: inline-block; padding-left: 20px; line-height: 18px; color: #434343; vertical-align: middle; text-align: left; }
+    .web_login .operate_tips { display: none; padding: 8px; border: 1px solid #dad699; background: #f9f5c7; position: absolute; bottom: -2px; border-radius: 2px; }
+        .web_login .operate_tips .tips_link { color: #f39800; }
+        .web_login .operate_tips .down_row { position: absolute; bottom: -6px; _bottom: -7px; left: 20px; width: 12px; height: 6px; background: url(../images/icon_2.png) no-repeat -162px -161px; font-size: 1px; }
+        .web_login .operate_tips .operate_content { width: 100%; text-align: left; }
+    .web_login .loading_tips { text-align: center; height: 24px; display: none; position: absolute; top: 10px; width: 274px; }
+    .web_login .login_form { width: 272px; margin: 0 auto; }
+    .web_login .inputOuter { width: 272px; height: 42px; background: url(../images/icon_2.png) no-repeat -1px -1px; }
+    .web_login .inputOuter_focus { width: 272px; height: 42px; background: url(../images/icon_2.png) no-repeat -1px -45px; }
+    .web_login .inputstyle { width: 258px; position: relative; top: 2px; left: 2px; height: 18px; padding: 11px 0 11px 10px; line-height: 18px; border: none; background: none; color: #333; font-family: Verdana,Tahoma,Arial; font-size: 16px; ime-mode: disabled; }
+    .web_login .input_tips, .web_login .input_tips_focus { position: absolute; top: 13px; +top:15px; left: 13px; font-size: 14px; line-height: 16px; color: #aaa; cursor: text; }
+    .web_login .input_tips_focus { color: #ddd; }
+    .web_login .uinArea { height: 55px; position: relative; z-index: 10; }
+    .web_login .uin_del { width: 21px; height: 21px; cursor: pointer; position: absolute; right: 15px; top: 10px; background: url(../images/icon_2.png) no-repeat -116px -160px; display: none; }
+        .web_login .uin_del:hover { background-position: -139px -160px; }
+    .web_login .email_list { border: 1px solid #70c2ec; background: #fff; width: 266px; position: absolute; z-index: 10; display: none; border-radius: 1px; padding: 1px; left: 2px; }
+        .web_login .email_list li, .web_login .email_list p { height: 31px; line-height: 31px; margin: 0; overflow: hidden; padding-left: 10px; }
+        .web_login .email_list p { height: 16px; line-height: 10px; }
+        .web_login .email_list .hover { background: #cbe2fa; }
+    .web_login .pwdArea { height: 55px; position: relative; z-index: 3; }
+    .web_login .lock_tips { position: absolute; top: 32px; left: -15px; height: 16px; padding: 5px; text-align: center; display: none; border: 1px solid #dad699; background: #f9f5c7; border-radius: 2px;  }
+        .web_login .lock_tips .lock_tips_row { position: absolute; top: -6px; left: 25px; width: 12px; height: 6px; background: url(../images/icon_2.png) no-repeat -162px -168px; }
+    .web_login .verifyArea { display: none; height: 120px; position: relative; }
+    .web_login .verifyinputArea { height: 55px; }
+    .web_login .verifycode { color: #333; font-size: 16px; }
+    .web_login .verifyimgArea { position: relative; height: 55px; cursor: pointer; }
+        .web_login .verifyimgArea .verifyimg { height: 55px; width: 150px; position: absolute; left: 0; }
+        .web_login .verifyimgArea .verifyimg_tips { position: absolute; left: 165px; top: 15px; color: #000; }
+    .web_login .submit { position: relative; height: 40px; }
+    .web_login .login_button { position: absolute; left: 0; outline: none; *hide-focus: expression(this.hideFocus=true); }
+        .web_login .login_button .btn { width: 115px; height: 35px; line-height: 35px; border: none; font-size: 18px; font-weight: bold; color: #fff; cursor: pointer; background: url(../images/icon_2.png) no-repeat 0 -90px; }
+        .web_login .login_button:hover .btn { background-position: -116px -90px; }
+        .web_login .login_button:hover { text-decoration: none; }
+    .web_login .low_login { position: absolute; left: 140px; top: 10px; }
+        .web_login .low_login .uncheck { float: left; height: 18px; width: 18px; }
+        .web_login .low_login .checked { float: left; height: 18px; width: 18px; }
+        .web_login .low_login .low_login_wording { height: 16px; line-height: 16px; line-height: 18px\9; cursor: pointer; margin-left: 5px; }
+.bottom { height: 16px; margin-bottom: 8px; width: 300px; position: absolute; bottom: 0; right: 10px; text-align: right; }
+    .bottom .link { color: #666; }
+    .bottom .dotted { color: #bfbfbf; margin: 0 5px; }
+    .bottom .vip_link:hover { color: #f00; }
+.web_qr_login { position: relative; height: 265px; overflow: hidden; }
+    .web_qr_login .web_qr_login_show { position: absolute; top: 0; }
+.xui { margin: 0 auto; width: 488px; }
+    .xui .qlogin_select { height: 160px; position: relative; }
+    .xui .qlogin_show { width: 360px; height: 160px; position: absolute; left: 64px; overflow: hidden; }
+    .xui .qlogin_list { height: 100%; position: absolute; text-align: center; }
+    .xui .prePage { width: 70px; height: 120px; position: absolute; top: 0; left: 0; text-align: center; visibility: hidden; }
+    .xui .nextPage { width: 70px; height: 120px; position: absolute; top: 0; right: 5px; text-align: center; visibility: hidden; }
+    .xui .preRow { width: 16px; height: 35px; display: inline-block; margin-top: 35px; background: url(../images/icon_2.png) no-repeat -181px -185px; cursor: pointer; }
+    .xui .prePage:hover .preRow { background-position: -181px -228px; }
+    .xui .nextRow { width: 16px; height: 35px; display: inline-block; margin-top: 35px; background: url(../images/icon_2.png) no-repeat -201px -185px; cursor: pointer; }
+    .xui .nextPage:hover .nextRow { background-position: -201px -228px; }
+    .xui .face { display: inline-block; height: 150px; width: 120px; text-align: center; position: relative; cursor: pointer; none; outline: none; }
+        .xui .face:focus { outline: none; }
+        .xui .face:hover { border: none; text-decoration: none; }
+        .xui .face img { width: 80px; height: 80px; position: absolute; top: 10px; left: 19px; border: none; }
+        .xui .face .img_out { width: 88px; height: 88px; position: absolute; top: 4px; left: 14px; background: url(../images/icon_2.png) no-repeat -0px -182px; }
+        .xui .face .img_out_focus { width: 88px; height: 88px; position: absolute; top: 5px; left: 15px; background: url(../images/icon_2.png) no-repeat -91px -183px; }
+        .xui .face:hover .img_out { width: 88px; height: 88px; position: absolute; top: 5px; left: 15px; background: url(../images/icon_2.png) no-repeat -91px -183px; }
+        .xui .face .nick { display: inline-block; text-align: center; position: absolute; top: 100px; left: 0; height: 20px; line-height: 18px; vertical-align: middle; width: 100%; overflow: hidden; color: #6f7479; }
+        .bottom .red, .xui .face .red { color: #f00; }
+        .xui .face .vip_logo { width: 26px; height: 12px; position: absolute; top: 12px; left: 21px; background: url(../other/vip_logo.html) no-repeat 0 0; }
+        .xui .face .uin { display: none; }
+        .xui .face:hover .uin { display: block; background: #000; height: 20px; width: 80px; line-height: 20px; position: absolute; left: 20px; top: 72px; filter: Alpha(opacity=50); opacity: .5; color: #fff; border-radius: 0 0 4px 4px; }
+        .xui .face .face_mengban { background: #000; width: 80px; height: 80px; position: absolute; top: 10px; left: 20px; filter: Alpha(opacity=30); opacity: .3; }
+    .xui .tips { height: 60px; margin-top: 20px; }
+    .xui .tips_logo { display: none; }
+    .xui .err_m { display: inline-block; height: 18px; vertical-align: middle; line-height: 18px; color: #a0a0a0; }
+    .xui .wording_tips { text-align: center; height: 25px; }
+    .xui .loading_tips { text-align: center; height: 25px; visibility: hidden; }
+    .xui .low_login { position: absolute; left: 12px; bottom: 6px; height: 18px; }
+        .xui .low_login .uncheck { float: left; height: 18px; width: 18px; }
+        .xui .low_login .checked { float: left; height: 18px; width: 18px; }
+        .xui .low_login .low_login_wording { float: left; height: 16px; line-height: 16px; line-height: 18px\9; margin-left: 5px; color: #b5bbc1; cursor: pointer; }
+.hide { display: none; }
+.qrlogin { position: relative; width: 488px; height: 265px; }
+.login, .login_no_qlogin { background-color: #ffffff; }
+.header .logo { background: url(../images/logo.jpg) no-repeat; }
+.qrswitch { position: absolute; right: 0; z-index: 100; }
+.qrswitch_logo { position: absolute; right: 10px; width: 51px; height: 77px; background: url(../images/pull_2.gif) no-repeat; outline: none; *hide-focus: expression(this.hideFocus=true); }
+.qrswitch_logo_qr { position: absolute; right: 20px; width: 40px; height: 50px; background: url(../images/pull_3.gif) no-repeat; outline: none; *hide-focus: expression(this.hideFocus=true); }
+.qrswitch_logo_click { position: absolute; right: 5px; width: 27px; height: 54px; background: url(../images/icon_2.png) no-repeat -228px -185px; outline: none; *hide-focus: expression(this.hideFocus=true); }
+.qrlogin { position: relative; width: 488px; height: 265px; background: url(../images/qr_bg.png) repeat; font-size: 14px; }
+    .qrlogin #qrlogin_step2, .qrlogin #qrlogin_step3 { display: none; }
+    .qrlogin .qr_step { position: relative; height: 230px; }
+    .qrlogin .qr_tips { height: 18px; width: 100%; text-align: center; position: absolute; top: 35px; }
+    .qrlogin .qr_link { color: #75c429; font-weight: bolder; margin: 0 8px; }
+    .qrlogin .qrlogin_bg { width: 150px; height: 96px; background: url(../images/qr.png) no-repeat 0 0; position: absolute; top: 88px; left: 105px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../html/qr_1_ie6.html',sizingMethod="crop"); }
+    .qrlogin .qrlogin_img { width: 110px; height: 110px; position: absolute; right: 80px; top: 80px; }
+    .qrlogin .kao { width: 305px; height: 140px; position: absolute; top: 80px; left: 100px; background: url(../images/qr.png) no-repeat -162px 0; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='qr_2_ie6.png',sizingMethod="crop"); }
+    .qrlogin .qr_login_tips_logo { display: inline-block; width: 18px; height: 18px; background: url(../images/icon_2.png) no-repeat -20px -163px; }
+    .qrlogin .qr_login_tips_wording { display: inline-block; height: 18px; line-height: 18px; color: #88c552; }
+    .qrlogin .qr_card { width: 260px; height: 100px; margin: 0 auto; position: absolute; top: 80px; left: 112px; }
+    .qrlogin .qr_head { width: 80px; height: 80px; position: absolute; top: 9px; left: 12px; border: 1px solid #fff; border-radius: 2px; }
+    .qrlogin .qr_nick { position: absolute; left: 120px; top: 15px; font-size: 14px; color: #02B0AD; font-weight: bold; width: 120px; overflow: hidden; height: 20px; line-height: 18px; }
+    .qrlogin .qr_uin { position: absolute; left: 120px; top: 40px; color: #607785; font-weight: bold; }
+    .qrlogin .qr_feeds { position: absolute; left: 120px; bottom: 20px; color: #607785; height: 18px; line-height: 18px; overflow: hidden; }
+.loginStart { cursor: pointer; color: #266392; font-size: 2em; }
+#_login_div_quick_ { position: absolute; z-index: 20000; width: 490px; height: 327px; display: none; font-size: 12px; }
